@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="main-elements-control">
+      <h1>Учет моих расходов</h1>
+      <div>
+        <p id="error-message" class="error"></p>
+        <input type="text" class="input" id="shopname" placeholder="Куда было потрачено:">
+        <input type="number" class="input" id="spent-sum" placeholder="Сколько было потрачено:">
+        <button class="button" onclick="addNewCost()">Добавить</button>
+      </div>
+      <div id="total"></div>
+    </div>
+    <ol id="content-page" class="content_page"></ol>
+  </body>
+<script src="script.js"></script>
+<script src="node_modules/moment/min/moment.min.js"></script>
+</html>
